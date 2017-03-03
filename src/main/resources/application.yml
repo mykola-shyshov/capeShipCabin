@@ -1,0 +1,24 @@
+spring:
+  main:
+    banner-mode: "off"
+  profiles:
+    active: "production"
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: "/api-docs"
+
+swaggerEnabled: "true"
+
+endpoints:
+  enabled: "false"
+
+server:
+  port: 8080
+  tomcat:
+    background-processor-delay: -1
+  compression:
+      enabled: "true"
+      mime-types: "application/json"
