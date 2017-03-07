@@ -15,8 +15,12 @@ swaggerEnabled: "true"
 endpoints:
   enabled: "false"
 
+mongo:
+  host:
+  dbname:
+
 server:
-  port: 8080
+  port: 9090
   tomcat:
     background-processor-delay: -1
   compression:

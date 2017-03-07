@@ -52,4 +52,19 @@ public class AppConfiguration {
     public Docket swaggerApi() {
         return new Docket( DocumentationType.SWAGGER_2 ).enable( swaggerEnabled );
     }
+
+//    @Override
+//    protected String getDatabaseName() {
+//        return "e-store";
+//    }
+
+//    @Override
+//    public Mongo mongo() throws Exception {
+//        return new Mongo();
+//    }
+
+//    @Override
+//    protected String getMappingBasePackage() {
+//        return "com.oreilly.springdata.mongodb";
+//    }
 }
