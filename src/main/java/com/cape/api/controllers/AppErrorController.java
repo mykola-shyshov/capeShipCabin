@@ -16,11 +16,14 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 @RequestMapping( "" )
 public class AppErrorController implements ErrorController {
+
     private static Logger logger = LoggerFactory.getLogger( AppErrorController.class );
+
     @Override
     public String getErrorPath() {
         return "/error";
     }
+
     @RequestMapping( "/error" )
     public ResponseEntity error( HttpServletRequest request, HttpServletResponse response ) {
         logger.warn( "App error: {}", HttpStatus.valueOf( response.getStatus() ).getReasonPhrase() );

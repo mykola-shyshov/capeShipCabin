@@ -9,18 +9,20 @@ import javax.inject.Named;
 import java.util.List;
 
 @Named
-public class GoodsService {
+public class CaptainGoodsService {
 
     private final GoodsRepository goodsRepository;
 
     @Inject
-    public GoodsService(
-             GoodsRepository goodsRepository
-    ) {
+    public CaptainGoodsService( GoodsRepository goodsRepository ) {
         this.goodsRepository = goodsRepository;
     }
 
     public List<Product> list() {
         return Lists.newArrayList( goodsRepository.findAll() );
+    }
+
+    public Product updateProduct( Product product ) {
+        return goodsRepository.save( product );
     }
 }

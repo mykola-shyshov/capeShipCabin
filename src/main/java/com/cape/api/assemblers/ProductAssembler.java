@@ -2,9 +2,10 @@ package com.cape.api.assemblers;
 
 import com.cape.api.dto.ProductTO;
 import com.cape.dao.documents.Product;
-import org.springframework.stereotype.Component;
 
-@Component
+import javax.inject.Named;
+
+@Named
 public class ProductAssembler {
 
     public ProductTO toResource( Product product ) {

@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class GoodsListTO {
+public class CaptainGoodsListTO {
 
-    private List<ProductTO> items = new ArrayList<>();
+    private List<CaptainProductTO> items = new ArrayList<>();
 
-    public GoodsListTO( List<ProductTO> items ) {
+    public CaptainGoodsListTO( List<CaptainProductTO> items ) {
         this.items.addAll( items );
     }
 
-    public List<ProductTO> getItems() {
+    public List<CaptainProductTO> getItems() {
         return Collections.unmodifiableList( items );
     }
 }
