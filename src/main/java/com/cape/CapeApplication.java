@@ -8,7 +8,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 public class CapeApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CapeApplication.class, args);
-	}
+    public static void main( String[] args ) {
+        SpringApplication.run( CapeApplication.class, args );
+    }
 }
