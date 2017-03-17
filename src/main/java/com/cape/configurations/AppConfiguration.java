@@ -1,4 +1,4 @@
-package com.cape;
+package com.cape.configurations;
 
 import com.cape.utils.version.VersionRequestMappingHandler;
 import com.fasterxml.jackson.annotation.JsonInclude;

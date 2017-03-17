@@ -19,6 +19,9 @@ public class Order {
     private OrderStatus orderStatus;
     private String remark;
 
+    public Order() {
+    }
+
     public Order(
           String name,
           String phone,

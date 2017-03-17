@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.1.RELEASE'
+		springBootVersion = '1.5.2.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -30,8 +30,8 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
 	compile("org.springframework.boot:spring-boot-starter-actuator")
 	compile("org.springframework.boot:spring-boot-starter-validation")
+	compile("org.springframework.boot:spring-boot-starter-security")
 	compile("org.springframework.boot:spring-boot-starter-data-mongodb")
-	compile("org.springframework.security:spring-security-web:4.1.1.RELEASE")
 	compile("io.springfox:springfox-swagger2:2.4.0")
 	compile("io.springfox:springfox-swagger-ui:2.4.0")
 	compile("com.google.code.findbugs:jsr305:3.0.0")

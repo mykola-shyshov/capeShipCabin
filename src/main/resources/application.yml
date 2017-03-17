@@ -16,8 +16,8 @@ endpoints:
   enabled: "false"
 
 mongo:
-  host:
-  dbname:
+  host: "localhost"
+  dbName: "hold"
 
 server:
   port: 9090
@@ -26,3 +26,7 @@ server:
   compression:
       enabled: "true"
       mime-types: "application/json"
+
+captain:
+  login: 'captain'
+  password: 'password'

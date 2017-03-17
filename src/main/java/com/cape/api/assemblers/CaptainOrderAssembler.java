@@ -10,6 +10,7 @@ public class CaptainOrderAssembler {
 
     public CaptainOrderTO toResource( Order order ) {
         return new CaptainOrderTO(
+               order.getId(),
                order.getName(),
                order.getPhone(),
                order.getProductId(),

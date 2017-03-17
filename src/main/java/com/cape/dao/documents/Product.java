@@ -19,6 +19,9 @@ public class Product {
     private Double margin;
     private String distribution;
 
+    public Product() {
+    }
+
     public Product(
             String id,
             String name,
