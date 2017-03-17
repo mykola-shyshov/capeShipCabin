@@ -8,6 +8,9 @@ public class OrderTO {
     private String productId;
     private String customOrderDescription;
 
+    public OrderTO() {
+    }
+
     public OrderTO(
             String id,
             String name,

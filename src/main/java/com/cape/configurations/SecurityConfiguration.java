@@ -35,6 +35,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .antMatchers( "/v1/goods/", "/v1/orders/" ).permitAll()
             .anyRequest().authenticated()
             .and()
+            .csrf().disable()
             .httpBasic();
     }
 }

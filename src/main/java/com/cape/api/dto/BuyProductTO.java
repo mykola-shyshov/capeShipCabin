@@ -7,6 +7,9 @@ public class BuyProductTO {
     private String productId;
     private String customOrderDescription;
 
+    public BuyProductTO() {
+    }
+
     public BuyProductTO(
            String name,
            String phone,

@@ -9,6 +9,9 @@ public class ProductTO {
 
     private int likes;
 
+    public ProductTO() {
+    }
+
     public ProductTO( String id, String name, String description, String imageUrl, int likes ) {
         this.id = id;
         this.name = name;
